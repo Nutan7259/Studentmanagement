@@ -1,0 +1,192 @@
+/* ===== GLOBAL ===== */
+
+body{
+  margin:0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:#f5f7fb;
+}
+
+/* ===== CONTAINER ===== */
+
+.container{
+  max-width:950px;
+  margin:40px auto;
+  background:white;
+  padding:35px;
+  border-radius:10px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== HEADER (TITLE + LOGOUT) ===== */
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:25px;
+}
+
+/* ===== TITLE ===== */
+
+.title{
+  font-size:26px;
+  color:#2c3e50;
+  font-weight:600;
+}
+
+/* ===== LOGOUT BUTTON ===== */
+
+.logout-btn{
+  background:#e53935;
+  color:white;
+  border:none;
+  padding:9px 16px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:14px;
+}
+
+.logout-btn:hover{
+  background:#c62828;
+}
+
+/* ===== FORM ===== */
+
+form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-bottom:25px;
+}
+
+input{
+  padding:11px;
+  font-size:14px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+}
+
+input:focus{
+  outline:none;
+  border-color:#4a90e2;
+  box-shadow:0 0 4px rgba(74,144,226,0.3);
+}
+
+/* ===== SAVE BUTTON ===== */
+
+button[type="submit"]{
+  background:#4a90e2;
+  color:white;
+  border:none;
+  padding:10px;
+  width:160px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+button[type="submit"]:hover{
+  background:#357bd8;
+}
+
+/* ===== EXPORT BUTTON ===== */
+
+.export-btn{
+  background:#1a73e8;
+  color:white;
+  border:none;
+  padding:10px 16px;
+  margin-bottom:20px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:14px;
+}
+
+.export-btn:hover{
+  background:#1558b0;
+}
+
+/* ===== TABLE ===== */
+
+.students-table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+.students-table thead{
+  background:#4a90e2;
+  color:white;
+}
+
+.students-table th,
+.students-table td{
+  padding:12px;
+  text-align:left;
+}
+
+.students-table tbody tr{
+  border-bottom:1px solid #eee;
+}
+
+.students-table tbody tr:hover{
+  background:#f0f6ff;
+}
+
+/* ===== ACTION BUTTONS ===== */
+
+.actions{
+  display:flex;
+  gap:10px;
+}
+
+/* EDIT BUTTON */
+
+.edit-btn{
+  background:#f4b400;
+  color:white;
+  border:none;
+  padding:7px 14px;
+  border-radius:6px;
+  font-size:13px;
+  font-weight:500;
+  cursor:pointer;
+  transition:all 0.2s ease;
+}
+
+.edit-btn:hover{
+  background:#d89c00;
+  transform:scale(1.05);
+}
+
+/* DELETE BUTTON */
+
+.delete-btn{
+  background:#e53935;
+  color:white;
+  border:none;
+  padding:7px 14px;
+  border-radius:6px;
+  font-size:13px;
+  font-weight:500;
+  cursor:pointer;
+  transition:all 0.2s ease;
+}
+
+.delete-btn:hover{
+  background:#c62828;
+  transform:scale(1.05);
+}
+
+/* ===== LOADING ===== */
+
+.loading{
+  text-align:center;
+  font-size:15px;
+}
+
+/* ===== FORM ERROR ===== */
+
+.error{
+  color:#e53935;
+  font-size:13px;
+  margin-top:-8px;
+}
